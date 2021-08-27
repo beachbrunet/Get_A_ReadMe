@@ -1,56 +1,3 @@
-// TODO: Include packages needed for this application
-// Global Variables.
-const fs = require("fs");
-const inquirer = require("inquirer");
-const gereate# = require('./#')
-
-// TODO: Create an array of questions for user input.
-// Created a string for the user to input.
-const questions = [
-  {
-    //   title
-    type: "input",
-    name: "tittle",
-    message: "What is the title of your project?",
-  },
-//   Whats the discription?
-  {
-    type: "input",
-    name: "disciption",
-    message: "Please provide a breif discription of your awesome project.",
-  },
-  {
-    type: "list",
-    name: "license",
-    message: "What license do you want to use?",
-    choices: ["MiT", "license", "other license", "#"]
-  },
-  {
-    //   github
-    type: "input",
-    name: "GitHub",
-    message: "Please enter your GitHub Username.",
-    
-  },
-  {
-    //   email
-    type: "input",
-    name: "email",
-    message: "Please provide your email address.",
-  },
-  {
-    type: "#",
-    name: "#",
-    message: "#",
-  },
-];
-
-inquirer.prompt(questions).then((data) => {
-console.log(data);
-
-});
-
-
 // Requirements
 // GIVEN a command-line application that accepts user input
 // WHEN I am prompted for information about my application repository
@@ -74,36 +21,77 @@ console.log(data);
 // WHEN I click on the links in the Table of Contents
 // THEN I am taken to the corresponding section of the README
 
+// TODO: Include packages needed for this application
+// Global Variables.
+const fs = require("fs");
+const inquirer = require("inquirer");
+const generateMarkdown = require("./utils/generateMarkdown");
 
+// TODO: Create an array of questions for user input.
+// Created a string for the user to input.
+const questions = [
+  {
+    //   title
+    type: "input",
+    message: "What is the title of your project?",
+    name: "tittle",
+  },
+  //   Whats the discription?
+  {
+    type: "input",
+    message: "Please provide a breif discription of your awesome project.",
+    name: "disciption",
+  },
+  {
+    type: "list",
+    name: "license",
+    message: "What license do you want to use?",
+    choices: ["MiT", "license", "other license", "#"],
+  },
+  {
+    //   github
+    type: "input",
+    name: "GitHub",
+    message: "Please enter your GitHub Username.",
+  },
+  {
+    //   email
+    type: "input",
+    name: "email",
+    message: "Please provide your email address.",
+  },
+  {
+    //   extra empty
+    type: "#",
+    name: "#",
+    message: "#",
+  },
+];
 
+inquirer.prompt(questions).then((data) => {
+  console.log(data);
+});
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-fs.writeFile(fileName, data, (error) => {
-  if (error) {
-    console.error(error)
-  } else {
-    console.log("You have made a README.md file successfully!")
-  }
-
-});
+  fs.writeFile("fileName", data, (err) => {
+    if (error) {
+      console.error(err);
+    } else {
+      console.log("You have made a README.md file successfully!");
+    }
+  });
 }
 
 // duplicate outline so I commented it out.
 // // TODO: Create a function to initialize app
 // function init() {}
 
-
-
-
 // Function call to initialize app
 function init() {
-  inquirer
-  .prompt(questions)
-  .then((response)=> {
-    writeToFile("README.md", generate#(response));
+  inquirer.prompt(questions).then((data) => {
+    writeToFile("README.md", generateMarkdown(data));
   });
 }
-
 
 init();
