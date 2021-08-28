@@ -30,23 +30,17 @@ THEN I am taken to the corresponding section of the README
 
 <!-- ----------------------- -->
 
-[BootStrap](https://getbootstrap.com/)
-
-<!-- List APIs used -->
-
-[Google](https://google.com)
-
-[RapidAPI](https://rapidapi.com)
+[GitHub License](https://gist.github.com/lukas-h/2a5d00690736b4c3a7ba)
 
 ## References
 
 <!-- ----------------------- -->
 
-[References used](https://)
+Benjamin Machock
 
 ## Contributions and Contact Information
 
 <!-- ----------------------- -->
 
 Catherine Cox
-ccox.034@gmail.com
+ccox.034@email.com
