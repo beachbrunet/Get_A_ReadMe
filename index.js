@@ -65,7 +65,7 @@ const questions = [
 function init() {
   // present the user with questions
   inquirer.prompt(questions).then((data) => {
-    fs.writeFile("READMEGEN.md", JSON.stringify(data), (err) => {
+    fs.writeFile("READMEGEN.md", generateMarkdown(data), (err) => {
       err
         ? console.log(err)
         : console.log("You have made a READMEGEN.md file successfully!");
