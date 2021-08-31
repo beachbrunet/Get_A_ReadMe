@@ -1,6 +1,6 @@
 const fs = require("fs");
 const inquirer = require("inquirer");
-// const generateMarkdown = require("./utils/generateMarkdown");
+const generateMarkdown = require("./utils/generateMarkdown");
 
 // TODO: Create an array of questions for user input.
 // Created a string for the user to input.
@@ -54,31 +54,21 @@ const questions = [
   },
 ];
 
-inquirer.prompt(questions).then((data) => {
-  console.log(data);
-});
+// This was to test the node.js to make sure it was running correctly
+// inquirer.prompt(questions).then((data) => {
+//   console.log(data);
+// });
 
-// // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
-//   fs.writeFile("README.md", data, (err) => {
-//     if (error) {
-//       console.error(err);
-//     } else {
-//       console.log("You have made a README.md file successfully!");
-//     }
-//   });
-// }
-
-// Duplicate outline so I commented it out.
+// Duplicate outline so I deleted it.
 // // TODO: Create a function to initialize app
 
 function init() {
   // present the user with questions
   inquirer.prompt(questions).then((data) => {
-    fs.writeToFile("README.md", JSON.stringify(data), (err) => {
+    fs.writeFile("READMEGEN.md", JSON.stringify(data), (err) => {
       err
         ? console.log(err)
-        : console.log("You have made a README.md file successfully!");
+        : console.log("You have made a READMEGEN.md file successfully!");
     });
   });
 }
