@@ -64,7 +64,7 @@ function writeToFile(fileName, data) {
   fs.writeFile("GENERATED-README.md", data, (err) => {
     err
       ? console.log(err)
-      : console.log("You have made a READMEGEN.md file successfully!"");
+      : console.log("You have made a READMEGEN.md file successfully!");
   });
 }
 

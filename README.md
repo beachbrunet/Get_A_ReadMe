@@ -28,11 +28,12 @@ WHEN I click on the links in the Table of Contents
 THEN I am taken to the corresponding section of the README
 ```
 
-## Screenshot
+## Images
 
 <!-- ----------------------- -->
 
-![Screen Shot](https://.png)
+![Screen Shot](images/ScreenShot.png),
+![Recording](images/recording.mov)
 
 ## Recources
 
