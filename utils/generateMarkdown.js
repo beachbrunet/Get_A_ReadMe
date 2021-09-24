@@ -67,7 +67,7 @@ ${data.test}
 ${data.contribution}
 
 ## License
-${renderLicenseSection(data.license)}
+${data.license}
 
 ## My Github
 [Profile](https://github.com/${data.github})

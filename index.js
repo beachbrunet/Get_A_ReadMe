@@ -59,24 +59,12 @@ const questions = [
 //   console.log(data);
 // });
 
-// // TODO: Create a function to initialize app
-// function init() {
-//   // present the user with questions
-//   inquirer.prompt(questions).then((data) => {
-//     fs.writeFile("READMEGEN.md", generateMarkdown(data), (err) => {
-//       err
-//         ? console.log(err)
-//         : console.log("You have made a READMEGEN.md file successfully!");
-//     });
-//   });
-// }
-
 // TODO: Create a function to write GENERATED-README file
 function writeToFile(fileName, data) {
   fs.writeFile("GENERATED-README.md", data, (err) => {
     err
       ? console.log(err)
-      : console.log("GENERATED-README.md file was created and written!");
+      : console.log("You have made a READMEGEN.md file successfully!"");
   });
 }
 
