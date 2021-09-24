@@ -9,13 +9,13 @@ const questions = [
     //   title
     type: "input",
     message: "What is the title of your project?",
-    name: "tittle",
+    name: "title",
   },
   //   Whats the discription?
   {
     type: "input",
     message: "Please provide a breif discription of your awesome project.",
-    name: "discription",
+    name: "description",
   },
   {
     type: "list",
@@ -59,17 +59,31 @@ const questions = [
 //   console.log(data);
 // });
 
-// Duplicate outline so I deleted it.
 // // TODO: Create a function to initialize app
+// function init() {
+//   // present the user with questions
+//   inquirer.prompt(questions).then((data) => {
+//     fs.writeFile("READMEGEN.md", generateMarkdown(data), (err) => {
+//       err
+//         ? console.log(err)
+//         : console.log("You have made a READMEGEN.md file successfully!");
+//     });
+//   });
+// }
 
+// TODO: Create a function to write GENERATED-README file
+function writeToFile(fileName, data) {
+  fs.writeFile("GENERATED-README.md", data, (err) => {
+    err
+      ? console.log(err)
+      : console.log("GENERATED-README.md file was created and written!");
+  });
+}
+
+// TODO: Create a function to initialize app
 function init() {
-  // present the user with questions
-  inquirer.prompt(questions).then((data) => {
-    fs.writeFile("READMEGEN.md", generateMarkdown(data), (err) => {
-      err
-        ? console.log(err)
-        : console.log("You have made a READMEGEN.md file successfully!");
-    });
+  return inquirer.prompt(questions).then((data) => {
+    writeToFile("GENERATED-README.md", generateMarkdown(data));
   });
 }
 
