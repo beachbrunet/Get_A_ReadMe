@@ -33,7 +33,7 @@ THEN I am taken to the corresponding section of the README
 <!-- ----------------------- -->
 
 ![Screen Shot](images/ScreenShot.png),
-![Recording](images/recording.mov)
+![Recording](images/recording.mov),
 
 ## Recources
 
