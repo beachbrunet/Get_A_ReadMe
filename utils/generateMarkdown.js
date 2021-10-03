@@ -48,7 +48,7 @@ function generateMarkdown(data) {
 ${data.description}
 
 ## Table of Contents
--[Desciption](#description)
+-[Description](#description)
 
 -[Usage](#Usage)
 
@@ -56,7 +56,7 @@ ${data.description}
 
 -[Questions](#Questions)
 
--[Constribution](#Contribution)
+-[Contributors](#Contribution)
 
 -[License Resources](#license)
 
