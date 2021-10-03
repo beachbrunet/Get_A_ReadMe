@@ -64,7 +64,7 @@ ${data.description}
 ${data.test}
 
 ## Contribution
-${data.contribution}
+${data.contributer}
 
 ## License
 ${data.license}

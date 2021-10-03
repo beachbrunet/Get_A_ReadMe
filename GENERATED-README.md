@@ -1,9 +1,11 @@
-# Awesome fun time
+# 
 
   
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+
 
 ## Description
-blah blah blah 2.0
+
 
 ## Table of Contents
 -[Desciption](#description)
@@ -25,12 +27,12 @@ npm run test
 undefined
 
 ## License
-ILP
+Apache 2.0 Licene
 
 ## My Github
 [Profile](https://github.com/undefined)
 
 ### email
-(email.com)
+()
 
 
