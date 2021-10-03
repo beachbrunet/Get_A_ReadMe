@@ -1,5 +1,10 @@
 # Get A ReadMe
 
+```
+Tired of constantly formating ReadMe's? Well I have the application for you!
+This application is able to generate a basic ReadMe.md for the basic coder. This code takes the users input with asking the user questions for what the user wants to add in the ReadMe, ie project name, license and contributers.
+```
+
 ## Requirements
 
 <!-- ----------------------- -->
@@ -28,12 +33,21 @@ WHEN I click on the links in the Table of Contents
 THEN I am taken to the corresponding section of the README
 ```
 
-## Images
+## Screenshot
 
 <!-- ----------------------- -->
 
 ![Screen Shot](images/ScreenShot.png),
 ![Recording](images/recording.mov),
+
+## Technologies and Dependancies
+
+<!-- ----------------------- -->
+
+- [inquirer](https://www.npmjs.com/package/inquirer)<br />
+  command-line: `npm i inquirer`
+
+- Node.js
 
 ## Recources
 
