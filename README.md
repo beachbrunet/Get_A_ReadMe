@@ -2,7 +2,9 @@
 
 ```
 Tired of constantly formating ReadMe's? Well I have the application for you!
-This application is able to generate a basic ReadMe.md for the basic coder. This code takes the users input with asking the user questions for what the user wants to add in the ReadMe, ie project name, license and contributers.
+This application is able to generate a basic ReadMe.md for the basic coder.
+This code takes the users input with asking the user questions,
+for what the user wants to add in the ReadMe, ie project name, license and contributers.
 ```
 
 ## Requirements
