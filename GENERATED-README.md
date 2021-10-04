@@ -1,14 +1,14 @@
-# Awesome
+# 
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+  
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+
 
 ## Description
 
-Its a pretty cool project
 
 ## Table of Contents
-
--[Desciption](#description)
+-[Description](#description)
 
 -[Usage](#Usage)
 
@@ -16,26 +16,23 @@ Its a pretty cool project
 
 -[Questions](#Questions)
 
--[Constribution](#Contribution)
+-[Contributors](#Contribution)
 
 -[License Resources](#license)
 
 ## Tests
-
 npm run test
 
 ## Contribution
 
-Dan
 
 ## License
-
-MIT
+Apache 2.0 Licene
 
 ## My Github
-
 [Profile](https://github.com/undefined)
 
 ### email
+()
 
-(email@email.com)
+

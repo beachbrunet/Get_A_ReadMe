@@ -4,6 +4,7 @@ const generateMarkdown = require("./utils/generateMarkdown");
 
 // TODO: Create an array of questions for user input.
 // Created a string for the user to input.
+// Via feedback I am missing that seemed helpful was: the table of contents formatting was off, and there were no sections for installation/usage/tests.
 const questions = [
   {
     //   title
@@ -35,12 +36,14 @@ const questions = [
     name: "email",
     message: "Please provide your email address.",
   },
+  // dependencies w/ default if nothing selected
   {
     type: "input",
     name: "installation",
     message: "What commands should be run for dependencies?",
     default: "npm i",
   },
+  // test w/ default if nothing selected
   {
     type: "input",
     name: "test",
